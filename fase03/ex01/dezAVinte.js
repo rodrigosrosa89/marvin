@@ -1,4 +1,5 @@
 function dezAVinte() {
-    return Math.floor(Math.random() * (20 - 10) + 10);
+    return Math.floor(Math.random() * (21 - 10) + 10);
 
 }
+
