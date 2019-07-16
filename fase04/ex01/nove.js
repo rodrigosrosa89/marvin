@@ -7,7 +7,6 @@ function nove(numero) {
         return false;
     }
     
-    console.log(ultimoNumero.substr(-1,1));
 } 
 
 
