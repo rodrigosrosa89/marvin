@@ -1,7 +1,7 @@
 function alfabetoMilitar(vogal) {
     letra = vogal.toLowerCase();
     if (letra == "a") {
-        return "alfa";
+        return "alpha";
     } else if (letra == "e") {
         return "echo";
     } else if (letra == "i") {
