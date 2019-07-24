@@ -1,9 +1,14 @@
 function soletrar(array) {
     var elementos = array.length;
     var novaList = [];
-    for (var a = 0; a < elementos; a++){
-        novaList.push(array.substr(a,1));
+    var iterator = 0;
+    while (iterator < array.length){
+        novaList.push(array.substr(iterator,1));
+        iterator++
     }
     return novaList;
 }
+
+
+
 
