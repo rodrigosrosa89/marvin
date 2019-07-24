@@ -1,9 +1,12 @@
 function quantasLetras(array) {
-    var total = 0
-    for (var a = 0; a < array.length; a++) {
-        var qtde = array[a].length;
-        total += qtde;
+    var totalLetras = 0;
+    var iterador = 0;
+    while (iterador < array.length) {
+        var qtde = array[iterador].length;
+        totalLetras+= qtde;
+        iterador++;
     }
-    return total;
+    return totalLetras;
 }
+
 
