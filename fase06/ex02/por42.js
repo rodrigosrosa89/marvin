@@ -1,17 +1,27 @@
-function por42(n1,n2) {
-    var arrayMultiplos = [];
-    var vetor = 2;
-    while (vetor <= 100) {
-        arrayMultiplos.push(42 * vetor);
-        vetor ++;
+function por42(x, y) {
+    var min, max;
+    var contador = 0;
+    var a = [];
+    var n = 0;
+    
+    if(x < y){
+        min = x;
+        max = y;
+    } else {
+        min = y;
+        max = x;
     }
-    var posicaoArray = 0;
-        while (posicaoArray < 100) {
-    var multiplo = arrayMultiplos[posicaoArray];
-    if (((multiplo <= n1 && multiplo >= n2) || (multiplo <= n2 && multiplo >= n1))) {
-        return multiplo;
+    
+    while (min <= max) {
+        if (min % 42 == 0) {
+            n++;
+            if (n == 2) {
+                return min;
+            }
+        }
+        min++;
     }
-        posicaoArray++;
-    }
+
+    return false;
 }
 
