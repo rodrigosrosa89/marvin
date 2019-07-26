@@ -13,7 +13,7 @@ function por42(x, y) {
     }
     
     while (min <= max) {
-        if (min % 42 == 0) {
+        if (min % 42 === 0) {
             n++;
             if (n == 2) {
                 return min;
