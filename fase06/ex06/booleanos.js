@@ -1,11 +1,14 @@
-function booleanos(array) {
-    var i = 0;
-    while(i < array.length) {
-        if ((array[i].toString() == "true") || (array[i].toString() == "false")) {
-             array.splice(i, 1);        
+function booleanos(a){
+        
+    var contador = a.length -1;
+    while (contador >= 0) {
+        var x = a[contador];
+        if (x.toString() == "true" || x.toString() == "false"){
+            a.splice(contador, 1);   
         }
-        i++;
+        contador--;
     }
-    return array;
+
+    return a;        
 }
 
