@@ -1,13 +1,16 @@
-function fibonacci(n1) {
-        if (n1 === 0) {
+function fibonacci(num){
+        
+        var a = 0 , b = 1;
+        var contador = 1;
+        if (num == 0) {
             return 0;
         }
-        if (n1 === 1) {
-            return 1;
-        }
-        else {
-            return this.fibonacci(n1 - 1) +
-                this.fibonacci(n1 - 2);
-        }
-    }
-
+        while(contador < num){
+            var x = b;
+            b = a + b;
+            a = x;
+            contador++;
+        } 
+        
+        return b;
+}
