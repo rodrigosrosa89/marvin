@@ -1,12 +1,12 @@
-function informacoes(objeto,string) { 
-    for (i = 0; i <objeto.length; i++) {
+function informacoes(x,busca) {
+    var objetos = [];
+    objetos = x;
     
-    if (string == objeto[i].toString()) {
-        return objeto[i];
-    } else{ 
+    if (objetos[busca] != null) {
+        return objetos[busca];
+    } else {
         return false;
     }
     
-    }
 }
 
