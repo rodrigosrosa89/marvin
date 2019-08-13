@@ -1,9 +1,8 @@
 function pinguins(arrayObj) {
-    
-    for(var i = 0; i < arrayObjt.length; i++) {
-        var posicao = arrayObjt[i];
+    var i = 0 
+    while ( i < arrayObj.length) { 
         posicao.push({cabeca: "oculos de sol", camisa:'jaqueta polar', pes: "tenis"});
-        i++
+        i++;
     }
     return arrayObt;
     
