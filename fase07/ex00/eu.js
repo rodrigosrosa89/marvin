@@ -1,6 +1,6 @@
 function eu() {
-    var nome = "Marvin";
-    var idade = 42;
-    return nome + " " + idade;
+    var obj = {nome:"Marvin", idade:42};
+    return obj;
 }
+
 
