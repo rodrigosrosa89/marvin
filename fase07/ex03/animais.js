@@ -2,8 +2,8 @@ function animais (array) {
     var obj = new Object();
     obj = array;
     var novaIdade = 5;
-
-    for (var i = 0; i< array.length; i++) {
+    var i = 0
+    while (i< array.length) {
     var posicao = obj[i];
     if (posicao['idade'] != null) {
         
@@ -13,6 +13,7 @@ function animais (array) {
         delete array[altura];
     }
     novaIdade++;
+    i++;
     }
     
     return array;
