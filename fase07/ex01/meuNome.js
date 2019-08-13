@@ -1,6 +1,6 @@
-function meuNome(nome) { 
-    var primeiraLetra = nome.substr(0,1).toUpperCase();
-    var outrasLetras = nome.substr(1,).toLowerCase();
+function meuNome(objeto) { 
+    var primeiraLetra = objeto.nome.substr(0,1).toUpperCase();
+    var outrasLetras = objeto.nome.substr(1,).toLowerCase();
     return primeiraLetra+outrasLetras;
     
 }
